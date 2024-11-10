@@ -19,7 +19,7 @@ const Read = () => {
           .then((response)=>{
             // Log the response and update the state with movie data
             console.log(response.data);
-            setMovies(response.data.movies);
+            setMovies(response.data.myMovies);
           })
           .catch((error) => {
             // Log any errors that occur during the request
